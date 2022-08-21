@@ -12,8 +12,8 @@ let message;
 let styleBMR;
 let isStyle;
 
-const mes_19 = "не извольте беспокоится, Вы еще молоды!";
-const mes_19_24 = "от 19 до 24 лет ваш ИМТ должен быть в диапазоне 19 до 24";
+const mes_19 = "Be calm? you are too young";
+const mes_19_24 = "from 19 to 24 y.o. your BMI should be in 19 to 24";
 const mes_25_34 = "от 25 до 34 лет ваш ИМТ должен быть в диапазоне 20 до 25";
 const mes_35_44 = "от 35 до 44 лет ваш ИМТ должен быть в диапазоне 21 до 26";
 const mes_45_54 = "от 45 до 54 лет ваш ИМТ должен быть в диапазоне 22 до 27";
@@ -74,15 +74,15 @@ const App = () => {
 
       <form ation="" className="second-form">
         <div>
-          <label for="styleOfLife">Ваш стиль жизни</label>
+          <label for="styleOfLife">Your style of life</label>
 
           <select className="styleOfLife" id="stLife">
-            <option value="">Выберите стиль жизни</option>
-            <option value="1">Сидячий</option>
+            <option value="">Choose your style of life</option>
+            <option value="1">Sitting</option>
             <option value="2">Умеренно Активный</option>
             <option value="3">Средне Активный</option>
-            <option value="4">Активный</option>
-            <option value="5">Спортсмен</option>
+            <option value="4">Active</option>
+            <option value="5">Sportsman</option>
           </select>
         </div>
       </form>
@@ -97,7 +97,7 @@ const App = () => {
               checked={checked}
               onChange={() => setChecked(!checked)}
             />
-            <span>Женский</span>
+            <span>Female</span>
           </label>
         </div>
         <div className="chMale">
@@ -108,7 +108,7 @@ const App = () => {
               checked={!checked}
               onChange={() => setChecked(!checked)}
             />
-            <span>Мужской</span>
+            <span>Male</span>
           </label>
         </div>
       </div>
@@ -120,13 +120,13 @@ const App = () => {
       </div>
       <div>
         <button className="button" type="submit" onClick={resultIMT}>
-          Вычислить
+          Calculate
         </button>
       </div>
 
       <h2>
-        При весе: {inputWeight}, при росте {(inputLength * 100).toFixed(0)}, в
-        возрасте {inputAge} Рекомедуемый ИМТ: {message}
+        With weight: {inputWeight}, with height {(inputLength * 100).toFixed(0)}
+        , in ages of: {inputAge} Recomended BMI: {message}
       </h2>
       {<Footer />}
     </div>
