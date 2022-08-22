@@ -22,7 +22,7 @@ const Footer = () => {
         {" "}
         <img src={market} alt="Google Market" width="100" />
       </a>
-      <a href="№" target="_blank">
+      <a href="https://imt-web-en.vercel.app/" target="_blank">
         {" "}
         <img src={flag} alt="Union Jack" width="50" />
       </a>
