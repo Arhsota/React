@@ -36,38 +36,44 @@ const App = () => {
       <div>
         <form action="" className="main-form">
           <div className="block">
-            <label for="weight">Вес</label>
+            <div className="container">
+              <div>
+                <label for="weight">Вес: </label>
 
-            <input
-              className="mainInput"
-              id="weight"
-              type="number"
-              placeholder="Введите вес в кг"
-              value={valueWeight}
-              required
-              onChange={(event) => setValueWeight(event.target.value)}
-            />
-
-            <label for="length">Рост</label>
-            <input
-              className="mainInput"
-              id="length"
-              type="number"
-              placeholder="Введите рост в см"
-              value={valueLength}
-              required
-              onChange={(event) => setValueLength(event.target.value)}
-            />
-
-            <label for="age">Возраст</label>
-            <input
-              className="mainInput age"
-              type="number"
-              placeholder="Введите возраст"
-              value={valueAge}
-              required
-              onChange={(event) => setValueAge(event.target.value)}
-            />
+                <input
+                  className="mainInput"
+                  id="weight"
+                  type="number"
+                  placeholder="Введите вес в кг"
+                  value={valueWeight}
+                  required
+                  onChange={(event) => setValueWeight(event.target.value)}
+                />
+              </div>
+              <div>
+                <label for="length">Рост: </label>
+                <input
+                  className="mainInput"
+                  id="length"
+                  type="number"
+                  placeholder="Введите рост в см"
+                  value={valueLength}
+                  required
+                  onChange={(event) => setValueLength(event.target.value)}
+                />
+              </div>
+              <div>
+                <label for="age">Возраст:</label>
+                <input
+                  className="mainInput age"
+                  type="number"
+                  placeholder="Введите возраст"
+                  value={valueAge}
+                  required
+                  onChange={(event) => setValueAge(event.target.value)}
+                />
+              </div>
+            </div>
           </div>
         </form>
       </div>
