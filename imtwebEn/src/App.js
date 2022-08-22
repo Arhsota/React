@@ -166,7 +166,7 @@ const App = () => {
         styleBMR = 1.9;
         break;
       case "null": {
-        alert("Выберите стиль");
+        alert("Choose style");
         // styleBMR = 1.2;
         break;
       }

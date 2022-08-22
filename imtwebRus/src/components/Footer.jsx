@@ -13,10 +13,7 @@ const Footer = () => {
           Этот калькулятор индекса массы тела и BMR, не является медицинским
           продуктом и несет чисто информативный характер.
         </h3>
-        <h3 className="head3">
-          Все права зарезервированы.
-          Copyright (c)2022
-        </h3>
+        <h3 className="head3">Все права зарезервированы. Copyright (c)2022</h3>
       </span>
 
       <a
@@ -26,7 +23,7 @@ const Footer = () => {
         {" "}
         <img src={market} alt="Google Market" width="100" />
       </a>
-      <a href="№" target="_blank">
+      <a href="https://imt-web-en.vercel.app" target="_blank">
         {" "}
         <img src={flag} alt="Union Jack" width="50" />
       </a>
