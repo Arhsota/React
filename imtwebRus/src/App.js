@@ -164,7 +164,7 @@ const App = () => {
       alert("Выберите стиль");
       styleBMR = 0;
     }
-    //
+
     // document.getElementById("stLife").onchange = choose_change;
 
     switch (isStyle) {
