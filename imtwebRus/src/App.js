@@ -26,6 +26,8 @@ const App = () => {
   const [valueWeight, setValueWeight] = useState();
   const [valueAge, setValueAge] = useState();
   const [checked, setChecked] = useState(true);
+  const [minPb, setValueMinPb] = useState(0);
+  const [maxPb, setValueMaxPb] = useState(0);
 
   return (
     <div className="App">
@@ -118,11 +120,21 @@ const App = () => {
           </label>
         </div>
       </div>
-      <div>
-        <progress className="progressBar" id="progress" max="100" value="0">
-          {" "}
-          30%{" "}
-        </progress>
+      <div className="block">
+        <div className="container">
+          <div>
+            <label for="progress"> {minPb}</label>
+          </div>
+          <div>
+            <progress className="progressBar" id="progress" max="100" value="0">
+              {" "}
+              30%
+            </progress>
+          </div>
+          <div>
+            <label for="progress"> {maxPb}</label>
+          </div>
+        </div>
       </div>
       <div>
         <button className="button" type="submit" onClick={resultIMT}>
@@ -235,7 +247,8 @@ const App = () => {
       document.getElementById("progress").min = 24;
       document.getElementById("progress").max = 29;
     }
-
+    setValueMinPb(document.getElementById("progress").min);
+    setValueMaxPb(document.getElementById("progress").max);
     if (checked) {
       setResultBMR(
         (
