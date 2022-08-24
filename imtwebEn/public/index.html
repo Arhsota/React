@@ -24,7 +24,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Body Mass Index</title>
+    <!-- Yandex.RTB -->
+    <script>
+      window.yaContextCb = window.yaContextCb || [];
+    </script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +44,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- Yandex.RTB R-A-1818155-1 -->
+    <div id="yandex_rtb_R-A-1818155-1"></div>
+    <script>
+      window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+          renderTo: "yandex_rtb_R-A-1818155-1",
+          blockId: "R-A-1818155-1",
+        });
+      });
+    </script>
   </body>
 </html>
