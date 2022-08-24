@@ -8,24 +8,27 @@ const Footer = () => {
   return (
     <footer className="myfooter">
       {/* <img src={mypic} alt="Logo" width="200" /> */}
-      <span>
+      <div>
         <h3 className="head3">
-          This application is not medical product, and is only for your info
+          This application Body Mass Index (BMI) is not medical product, but
+          only for your information
         </h3>
-        <h3 className="head3">All rights reserved. Copyright (c)2022</h3>
-      </span>
-
-      <a
-        href="https://play.google.com/store/apps/details?id=com.arhsota.android.imt"
-        target="_blank"
-      >
-        {" "}
-        <img src={market} alt="Google Market" width="100" />
-      </a>
-      <a href="https://imt-web-en.vercel.app/" target="_blank">
-        {" "}
-        <img src={flag} alt="Union Jack" width="50" />
-      </a>
+      </div>
+      <div className="lastString">
+        <h3 className="head3">All Rights Reserved. Copyright (c)2022 </h3>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.arhsota.android.imt"
+          target="_blank"
+          className="googleMarket"
+        >
+          {" "}
+          <img src={market} alt="Google Market" width="100" />
+        </a>
+        <a href="https://imt-web-en.vercel.app/" target="_blank">
+          {" "}
+          <img src={flag} alt="Union Jack" width="50" />
+        </a>
+      </div>
     </footer>
   );
 };

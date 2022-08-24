@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/myheader.css";
+import "./Description.jsx";
 // import market from "../images/google_market.png";
 // import flag from "../images/unionjack.png";
 
@@ -10,7 +11,7 @@ const Header = () => {
       {/* <img src={flag} alt="Logo" width="50" /> */}
       {/* <h1>Ваше здоровье</h1> */}
 
-      <a href="№" target="_blank">
+      <a href="#" onClick={" "}>
         {" "}
         Описание
       </a>

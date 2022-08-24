@@ -12,13 +12,13 @@ let message;
 let styleBMR;
 let isStyle;
 
-const mes_19 = "Be calm? you are too young";
-const mes_19_24 = "from 19 to 24 y.o. your BMI should be in 19 to 24";
-const mes_25_34 = "от 25 до 34 лет ваш ИМТ должен быть в диапазоне 20 до 25";
-const mes_35_44 = "от 35 до 44 лет ваш ИМТ должен быть в диапазоне 21 до 26";
-const mes_45_54 = "от 45 до 54 лет ваш ИМТ должен быть в диапазоне 22 до 27";
-const mes_55_64 = "от 55 до 64 лет ваш ИМТ должен быть в диапазоне 23 до 28";
-const mes_65 = "от 65 и старше, ваш ИМТ должен быть в диапазоне 24 до 29";
+const mes_19 = "Keep Calm! You are too young!";
+const mes_19_24 = "from 19 to 24 y.o. your BMI should be in 19 до 24";
+const mes_25_34 = "from 25 to 34 y.o. your BMI should be in 20 до 25";
+const mes_35_44 = "from 35 to 44 y.o. your BMI should be in 21 до 26";
+const mes_45_54 = "from 45 to 54 y.o. your BMI should be in 22 до 27";
+const mes_55_64 = "from 55 to 64 y.o. your BMI should be in 23 до 28";
+const mes_65 = "from 65 y.o. or elder your BMI should be in 24 до 29";
 const App = () => {
   const [result, setResult] = useState(0);
   const [resultBMR, setResultBMR] = useState(0);
@@ -31,56 +31,62 @@ const App = () => {
     <div className="App">
       <h1>
         {<Header />}
-        ИМТ {result} BMR {resultBMR}
+        BMI {result} BMR {resultBMR}
       </h1>
       <div>
         <form action="" className="main-form">
           <div className="block">
-            <label for="weight">Вес</label>
+            <div className="container">
+              <div>
+                <label for="weight">Weight: </label>
 
-            <input
-              className="mainInput"
-              id="weight"
-              type="number"
-              placeholder="Введите вес в кг"
-              value={valueWeight}
-              required
-              onChange={(event) => setValueWeight(event.target.value)}
-            />
-
-            <label for="length">Рост</label>
-            <input
-              className="mainInput"
-              id="length"
-              type="number"
-              placeholder="Введите рост в см"
-              value={valueLength}
-              required
-              onChange={(event) => setValueLength(event.target.value)}
-            />
-
-            <label for="age">Возраст</label>
-            <input
-              className="mainInput age"
-              type="number"
-              placeholder="Введите возраст"
-              value={valueAge}
-              required
-              onChange={(event) => setValueAge(event.target.value)}
-            />
+                <input
+                  className="mainInput"
+                  id="weight"
+                  type="number"
+                  placeholder="Input weight, kg"
+                  value={valueWeight}
+                  required
+                  onChange={(event) => setValueWeight(event.target.value)}
+                />
+              </div>
+              <div>
+                <label for="length">Height: </label>
+                <input
+                  className="mainInput"
+                  id="length"
+                  type="number"
+                  placeholder="Input height, cm"
+                  value={valueLength}
+                  required
+                  onChange={(event) => setValueLength(event.target.value)}
+                />
+              </div>
+              <div>
+                <label for="age">Age:</label>
+                <input
+                  className="mainInput age"
+                  type="number"
+                  placeholder="Input years"
+                  value={valueAge}
+                  required
+                  onChange={(event) => setValueAge(event.target.value)}
+                />
+              </div>
+            </div>
           </div>
         </form>
       </div>
 
       <form ation="" className="second-form">
         <div>
-          <label for="styleOfLife">Your style of life</label>
+          <label for="styleOfLife">Style of life</label>
 
           <select className="styleOfLife" id="stLife">
-            <option value="">Choose your style of life</option>
+            <option value="">Choose style of life</option>
             <option value="1">Sitting</option>
-            <option value="2">Умеренно Активный</option>
-            <option value="3">Средне Активный</option>
+            <option value="2">Low Active</option>
+            <option value="3">Middle Active</option>
             <option value="4">Active</option>
             <option value="5">Sportsman</option>
           </select>
@@ -125,8 +131,9 @@ const App = () => {
       </div>
 
       <h2>
-        With weight: {inputWeight}, with height {(inputLength * 100).toFixed(0)}
-        , in ages of: {inputAge} Recomended BMI: {message}
+        With weight- {inputWeight}, height- {(inputLength * 100).toFixed(0)},
+        ages-
+        {inputAge} Recomendations: {message}
       </h2>
       {<Footer />}
     </div>
@@ -143,7 +150,7 @@ const App = () => {
     isStyle = document.getElementById("stLife").value;
 
     if (isStyle === "") {
-      alert("Выберите стиль");
+      alert("Choose style");
       styleBMR = 0;
     }
 

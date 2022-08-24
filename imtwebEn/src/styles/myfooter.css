@@ -3,8 +3,16 @@
   text-align: right;
   margin-left: 10px;
   border-top: solid 2px rgb(227, 227, 240);
+  /* display: flex; */
 }
 .head3 {
   font-size: 18px;
   text-align: left;
+}
+
+.lastString {
+  display: flex;
+}
+.googleMarket {
+  text-align: right;
 }
