@@ -179,13 +179,31 @@ label {
 .progressBar {
   height: 70px;
   width: 500px;
-  position: relative;
+  /* position: relative; */
   /* background: #555; */
+  background-color: #ddd;
   padding: 3px;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
+progress::-webkit-progress-value {
+  background: #e0a;
+}
+
+.minmax {
+  /* display: inline; */
+}
+
+.minmax,
+label {
+  display: block;
+}
+
+.max {
+  text-align: left;
+}
 .button {
   background-color: #0b76ef;
   border: none;
