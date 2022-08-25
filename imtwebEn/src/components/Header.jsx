@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/myheader.css";
-import "./Description.jsx";
+import "./description.jsx";
 // import market from "../images/google_market.png";
 // import flag from "../images/unionjack.png";
 
