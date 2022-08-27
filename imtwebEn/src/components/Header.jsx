@@ -11,10 +11,7 @@ const Header = () => {
       {/* <img src={flag} alt="Logo" width="50" /> */}
       {/* <h1>Ваше здоровье</h1> */}
 
-      <a href="#" onClick={" "}>
-        {" "}
-        Description
-      </a>
+      <a href="https://arhsota.github.io/imt-en-desc.html"> Description</a>
     </header>
   );
 };

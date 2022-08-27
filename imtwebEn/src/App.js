@@ -11,6 +11,7 @@ let resultIMT; // for progress bar
 let message;
 let styleBMR;
 let isStyle;
+let resultIMTColor;
 
 const mes_19 = "Keep Calm! You are too young!";
 const mes_19_24 = "from 19 to 24 y.o. your BMI should be in 19 до 24";
@@ -31,7 +32,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>
+      <h1 id="mainresult">
         {<Header />}
         BMI {result} BMR {resultBMR}
       </h1>
@@ -208,9 +209,11 @@ const App = () => {
     resultIMT = setResult(
       (inputWeight / (inputLength * inputLength)).toFixed(2)
     );
-    /*
+    /*  
     if (resultIMT > 27) {
-      document.getElementById("progress").-webkit-progress-value() = 19;
+      resultIMTColor = getElementById("mainresult");
+      resultIMTColor.
+      document.getElementById("mainresult").-webkit-progress-value() = 19;
     }
 */
     // Recomendations
