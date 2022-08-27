@@ -81,7 +81,7 @@ const App = () => {
         </form>
       </div>
 
-      <form ation="" className="second-form">
+      <form className="second-form">
         <div>
           <label for="styleOfLife">Style of life</label>
 

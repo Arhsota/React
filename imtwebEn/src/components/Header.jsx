@@ -11,7 +11,9 @@ const Header = () => {
       {/* <img src={flag} alt="Logo" width="50" /> */}
       {/* <h1>Ваше здоровье</h1> */}
 
-      <a href="https://arhsota.github.io/imt-en-desc.html"> Description</a>
+      <div className="myhref">
+        <a href="https://arhsota.github.io/imt-en-desc.html">Description</a>
+      </div>
     </header>
   );
 };

@@ -1,6 +1,7 @@
 .myheader {
   color: blueviolet;
   text-align: right;
+  vertical-align: baseline;
   margin-right: 5px;
   border-bottom: solid 2px darkblue;
 }

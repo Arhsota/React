@@ -15,7 +15,9 @@ const Footer = () => {
         </h3>
       </div>
       <div className="lastString">
-        <h3 className="head3">All Rights Reserved. Copyright (c)2022 </h3>
+        <h3 className="head3">
+          Version 1.1, All Rights Reserved, Copyright (c)2022{" "}
+        </h3>
         <a
           href="https://play.google.com/store/apps/details?id=com.arhsota.android.imt"
           target="_blank"
